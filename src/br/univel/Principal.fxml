@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.geometry.*?>
+<?import javafx.scene.control.*?>
+<?import java.lang.*?>
+<?import javafx.scene.layout.*?>
+<?import javafx.scene.layout.GridPane?>
+
+
+<GridPane prefHeight="267.0" prefWidth="309.0" xmlns:fx="http://javafx.com/fxml/1" xmlns="http://javafx.com/javafx/8.0.40" fx:controller="br.univel.PrincipalController">
+   <rowConstraints>
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+      <RowConstraints minHeight="10.0" prefHeight="30.0" />
+   </rowConstraints>
+   <columnConstraints>
+      <ColumnConstraints maxWidth="95.0" minWidth="10.0" prefWidth="43.0" />
+      <ColumnConstraints maxWidth="246.0" minWidth="10.0" prefWidth="246.0" />
+   </columnConstraints>
+   <children>
+      <Label prefHeight="14.0" prefWidth="41.0" text="Código:" GridPane.halignment="LEFT" GridPane.hgrow="NEVER" />
+      <Label prefHeight="14.0" prefWidth="40.0" text="Nome:" GridPane.halignment="LEFT" GridPane.rowIndex="1" />
+      <TextField fx:id="txFCodigo" prefHeight="22.0" prefWidth="246.0" GridPane.columnIndex="1" GridPane.hgrow="ALWAYS" />
+      <TextField fx:id="txFNome" GridPane.columnIndex="1" GridPane.rowIndex="1" />
+      <Button mnemonicParsing="false" onAction="#Salvar" text="Salvar" GridPane.columnIndex="1" GridPane.halignment="RIGHT" GridPane.hgrow="NEVER" GridPane.rowIndex="2" />
+   </children>
+   <padding>
+      <Insets bottom="10.0" left="10.0" right="10.0" top="10.0" />
+   </padding>
+</GridPane>
